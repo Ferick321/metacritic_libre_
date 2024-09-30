@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import React from "react";
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Main } from "./components/Main";  // Correctly importing Main as a named export
@@ -20,6 +21,8 @@ export default function App() {
             component={Main} 
             options={{ headerShown: false }} // Hides the header for Main
           />
+
+
           <Stack.Screen 
             name="GameDetail" 
             component={GameDetailScreen} 
